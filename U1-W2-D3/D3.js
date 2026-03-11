@@ -246,6 +246,44 @@ console.log(starWarsCharacters);
   Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione.
 */
 
+let length = 0 + starWarsCharacters.length;
+console.log(starWarsCharacters.length);
+
+for (let i = starWarsCharacters.length - 1; i >= 0; i--)
+  if (starWarsCharacters[i].gender === "female") {
+    starWarsCharacters.splice(i, 1);
+  }
+
+console.log(starWarsCharacters.length);
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
+
+let random = Math.floor(Math.random() * starWarsCharacters.length);
+
+console.log(random);
+
+console.log(starWarsCharacters[random]);
+
+let = c = starWarsCharacters[random];
+
+console.log(c);
+
+console.log(
+  "il mio nome è",
+  c.name,
+  "sono nato nel",
+  c.birth_year,
+  "i miei occhi sono",
+  c.eye_color,
+  "sono",
+  c.gender,
+  "i miei capelli sono",
+  c.hair_color,
+  "sono alto",
+  c.height,
+  "la mia massa è di",
+  c.mass,
+  "la mia pelle è",
+  c.skin_color,
+);
